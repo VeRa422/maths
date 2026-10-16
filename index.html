@@ -34,8 +34,108 @@
 .reward .mini-leaf{width:65px;height:72px}
 .confetti{background-image:var(--reward-leaf)!important;background-color:transparent!important;background-size:contain!important;background-repeat:no-repeat!important;border-radius:0;width:24px;height:29px}
 @media(max-width:720px){.progress .mini-leaf{width:20px;height:25px}.reward{gap:7px}.reward .mini-leaf{width:43px;height:50px}.big-leaf{width:150px;height:160px}}
+
+/* A complete 1600 × 900 stage, fitted to the iframe in both directions. */
+html,body{width:100%;height:100%;min-height:0;margin:0;overflow:hidden;overscroll-behavior:none}
+#game-stage{position:fixed;left:50%;top:50%;width:1600px;height:900px;overflow:hidden;transform:translate(-50%,-50%) scale(var(--stage-scale,.5));transform-origin:center center}
+#game-stage header{width:1600px;max-width:none;height:72px;min-height:0;padding:10px 28px;flex-wrap:nowrap;gap:16px}
+#game-stage .brand{font-size:24px;gap:12px;white-space:nowrap}
+#game-stage .brand svg{width:38px;height:38px}
+#game-stage .tools{flex-wrap:nowrap;gap:8px}
+#game-stage .tool{font-size:16px;padding:10px 15px;min-height:44px}
+#game-stage .shell{width:1600px;max-width:none;height:828px;min-height:0;margin:0;padding:0 20px 20px}
+#game-stage main{width:1560px;height:808px;min-height:0;max-height:808px;border-radius:28px;overflow:hidden}
+#game-stage .screen{padding:24px 32px;min-height:0;animation:none!important;width:100%;transform-origin:top center}
+#game-stage .hero{min-height:0;height:808px;padding:45px 85px;align-items:center;background:linear-gradient(90deg,#fffcf2f5 0%,#fffcf2d9 48%,#fffcf200 85%),var(--bg) center/cover}
+#game-stage .hero-copy{max-width:680px}
+#game-stage h1{font-size:70px;line-height:1.03;margin:0 0 20px}
+#game-stage h2{font-size:37px;line-height:1.15;margin:0 0 12px}
+#game-stage .lead{font-size:23px;max-width:650px}
+#game-stage .hero .lead{max-width:590px}
+#game-stage .hero-actions{flex-direction:row;align-items:center;gap:14px;flex-wrap:wrap;margin-top:24px}
+#game-stage .steps{gap:10px;margin:25px 0;flex-wrap:wrap}
+#game-stage .step-pill{font-size:17px;padding:10px 14px}
+#game-stage .topline{height:36px;min-height:36px;margin-bottom:16px;gap:20px;align-items:center}
+#game-stage .breadcrumbs{font-size:17px}
+#game-stage .progress{gap:6px;font-size:16px}
+#game-stage .progress-label{display:inline;margin-left:10px}
+#game-stage .progress .mini-leaf{width:27px;height:32px}
+#game-stage .market{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:28px 0 22px}
+#game-stage .stall{min-height:320px;padding:0 24px 28px}
+#game-stage .awning{width:calc(100% + 48px);height:47px;margin:0 -24px 22px}
+#game-stage .stall h3{font-size:29px}
+#game-stage .stall p{font-size:21px}
+#game-stage .screen-footer{flex-direction:row;align-items:center;margin-top:20px}
+#game-stage .harvest-pager{gap:10px;margin-bottom:16px}
+#game-stage .harvest-pager button{width:42px;height:42px;font-size:20px}
+#game-stage .mission-body{grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+#game-stage .scale-frame{min-height:0;height:430px}
+#game-stage .scale-frame img{width:100%;height:100%;max-height:430px;padding:16px;object-fit:contain;animation:none}
+#game-stage .answer-pane{padding:0 8px}
+#game-stage .support{font-size:18px;margin:0 0 12px;line-height:1.35}
+#game-stage .equation{font-size:33px;gap:10px;margin:10px 0 15px;line-height:1.5}
+#game-stage .slot{height:60px;min-width:58px;font-size:31px}
+#game-stage .answer-line{font-size:24px;gap:12px;line-height:2.1}
+#game-stage .keypad{max-width:520px;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:16px 0}
+#game-stage .key{min-height:48px;font-size:25px}
+#game-stage .key.erase{font-size:18px}
+#game-stage .message{min-height:54px;margin:8px 0;font-size:18px;line-height:1.35}
+#game-stage .action-row{gap:12px;margin-top:12px;flex-wrap:wrap}
+#game-stage .action-row>*{flex-grow:0}
+#game-stage .primary,#game-stage .secondary{font-size:20px;min-height:54px;padding:15px 22px}
+#game-stage .button-story{font-size:26px;line-height:1.4;max-width:none;margin:12px 0 20px}
+#game-stage .button-game{grid-template-columns:.85fr 1.15fr;gap:36px}
+#game-stage .button-tray{padding:25px}
+#game-stage .shirt-buttons{gap:17px}
+#game-stage .shirt-button{width:68px;height:68px;gap:10px}
+#game-stage .op{font-size:28px;padding:10px 16px}
+#game-stage .beads-intro{font-size:22px;line-height:1.35;max-width:none;margin:0 0 12px}
+#game-stage .rules{margin:10px 0 16px;gap:16px;flex-wrap:nowrap}
+#game-stage .rule{font-size:21px;padding:11px 16px;line-height:1.35}
+#game-stage .bead-layout{grid-template-columns:850px minmax(0,1fr);gap:24px;align-items:start}
+#game-stage .palette{gap:10px;margin-bottom:15px;flex-wrap:nowrap}
+#game-stage .paint{font-size:18px;height:49px;min-width:49px;padding:0 12px}
+#game-stage .paint i{width:28px;height:28px}
+#game-stage .chains-scroll{overflow:visible;padding:0}
+#game-stage .chain-grid{grid-template-columns:repeat(8,minmax(0,1fr));min-width:0;max-width:none;gap:14px 10px}
+#game-stage .chain{padding:15px 8px;gap:7px;min-height:86px}
+#game-stage .chain:nth-child(1),#game-stage .chain:nth-child(8){grid-column:2/span 2}
+#game-stage .chain:nth-child(2),#game-stage .chain:nth-child(9){grid-column:4/span 2}
+#game-stage .chain:nth-child(3),#game-stage .chain:nth-child(10){grid-column:6/span 2}
+#game-stage .chain:nth-child(4){grid-column:1/span 2}
+#game-stage .chain:nth-child(5){grid-column:3/span 2}
+#game-stage .chain:nth-child(6){grid-column:5/span 2}
+#game-stage .chain:nth-child(7){grid-column:7/span 2}
+#game-stage .bead{width:44px;height:44px;flex-basis:44px}
+#game-stage .chain:after{font-size:20px}
+#game-stage .table-area{max-width:none;padding:15px 17px}
+#game-stage .table-area h3{font-size:25px;margin:0 0 8px}
+#game-stage .table-hint{font-size:18px;line-height:1.3;margin:0 0 12px}
+#game-stage th,#game-stage td{height:44px;padding:3px}
+#game-stage th{font-size:17px}
+#game-stage th:first-child{width:28%}
+#game-stage .color-dot{width:25px;height:25px}
+#game-stage .table-slot{width:44px;height:35px;font-size:24px}
+#game-stage .table-area .keypad{max-width:none;grid-template-columns:repeat(6,minmax(0,1fr));margin:12px 0 5px;gap:7px}
+#game-stage .table-area .key{min-height:40px;font-size:23px}
+#game-stage .table-area .key.erase{font-size:16px}
+#game-stage .table-area .message{min-height:66px;font-size:18px;margin:8px 0}
+#game-stage .table-area .action-row{margin-top:8px;gap:10px}
+#game-stage .table-area .primary,#game-stage .table-area .secondary{font-size:18px;min-height:50px;padding:13px 17px}
+#game-stage .teacher-toggle{font-size:16px;padding:10px}
+#game-stage #app[data-view="beads"][data-bead-step="table"] .beads-intro,#game-stage #app[data-view="beads"][data-bead-step="table"] .rules{display:none}
+#game-stage #app[data-view="beads"][data-bead-step="table"] h2{margin-bottom:20px}
+#game-stage .completion{max-width:1050px;margin:0 auto;padding:6px 20px;text-align:center}
+#game-stage .completion .big-leaf{width:130px;height:140px;margin:0 auto 15px}
+#game-stage .completion h1{font-size:52px;margin-bottom:16px}
+#game-stage .completion p{font-size:24px;line-height:1.35;margin-bottom:14px}
+#game-stage .completion .eyebrow{font-size:15px}
+#game-stage .reward{gap:16px;margin:20px 0}
+#game-stage .reward .mini-leaf{width:58px;height:64px}
+#game-stage .completion .hero-actions{margin-top:20px}
+dialog{max-height:calc(100dvh - 24px);overflow:auto}
 </style></head>
-<body><header><div class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C8 12 5 27 12 35c8 10 26 2 28-18C31 19 29 8 24 6Z" fill="#d68e35"/><path d="M12 42 29 16" stroke="#87532b" stroke-width="3" stroke-linecap="round"/></svg>Осенняя ярмарка</div><nav class="tools" aria-label="Управление"><button class="tool" id="homeBtn">К ярмарке</button><button class="tool" id="newGameBtn">Новая игра</button><button class="tool" id="soundBtn" aria-pressed="false">Звук: выкл.</button><button class="tool" id="fullBtn">На весь экран</button><button class="tool" id="helpBtn" aria-label="Как играть">?</button></nav></header><div class="shell"><main id="app"><section class="hero"><div class="hero-copy"><p class="eyebrow">Математическое приключение</p><h1>Осенняя<br>ярмарка</h1><p class="lead">На лесной ярмарке столько дел! Помогите взвесить урожай, посчитать пуговицы и собрать яркие бусы.</p><div class="steps"><span class="step-pill">3 остановки</span><span class="step-pill">6 золотых листочков</span></div><div class="hero-actions"><button class="primary" data-action="start-new">Новая игра</button><button class="secondary" data-action="help">Как играть</button></div><noscript><p>Для игры включите JavaScript в настройках браузера.</p></noscript></div></section></main></div><div class="celebrate" id="confetti" aria-hidden="true"></div><div id="toast" class="toast hidden" role="status"></div><dialog id="help"><h2>Как играть</h2><p>На ярмарке три остановки. Найдите массу урожая, реши задачу про пуговицы и раскрасьте бусы.</p><p>Нажмите на пустое окошко, затем выберите цифру. Бусины раскрашиваются нажатием: сначала выберите краску.</p><p>За четыре взвешивания и две другие задачи вы получите шесть золотых листочков. Можно пробовать сколько угодно!</p><p class="tiny">При открытии выберите «Новая игра» для следующей группы или «Продолжить», чтобы вернуться к сохранённым ответам. Выполненное задание можно решить ещё раз. Звук включается отдельной кнопкой.</p><div class="action-row"><button class="secondary" id="resetBtn">Начать заново</button><button class="primary" id="closeHelp">Понятно</button></div></dialog><dialog id="resetDialog"><h2>Начать сначала?</h2><p>Собранные листочки и ответы будут очищены.</p><div class="action-row"><button class="secondary" id="cancelReset">Отмена</button><button class="primary" id="confirmReset">Начать</button></div></dialog>
+<body><div id="game-stage"><header><div class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C8 12 5 27 12 35c8 10 26 2 28-18C31 19 29 8 24 6Z" fill="#d68e35"/><path d="M12 42 29 16" stroke="#87532b" stroke-width="3" stroke-linecap="round"/></svg>Осенняя ярмарка</div><nav class="tools" aria-label="Управление"><button class="tool" id="homeBtn">К ярмарке</button><button class="tool" id="newGameBtn">Новая игра</button><button class="tool" id="soundBtn" aria-pressed="false">Звук: выкл.</button><button class="tool" id="fullBtn">На весь экран</button><button class="tool" id="helpBtn" aria-label="Как играть">?</button></nav></header><div class="shell"><main id="app"><section class="hero"><div class="hero-copy"><p class="eyebrow">Математическое приключение</p><h1>Осенняя<br>ярмарка</h1><p class="lead">На лесной ярмарке столько дел! Помогите взвесить урожай, посчитать пуговицы и собрать яркие бусы.</p><div class="steps"><span class="step-pill">3 остановки</span><span class="step-pill">6 золотых листочков</span></div><div class="hero-actions"><button class="primary" data-action="start-new">Новая игра</button><button class="secondary" data-action="help">Как играть</button></div><noscript><p>Для игры включите JavaScript в настройках браузера.</p></noscript></div></section></main></div></div><div class="celebrate" id="confetti" aria-hidden="true"></div><div id="toast" class="toast hidden" role="status"></div><dialog id="help"><h2>Как играть</h2><p>На ярмарке три остановки. Найдите массу урожая, реши задачу про пуговицы и раскрасьте бусы.</p><p>Нажмите на пустое окошко, затем выберите цифру. Бусины раскрашиваются нажатием: сначала выберите краску.</p><p>За четыре взвешивания и две другие задачи вы получите шесть золотых листочков. Можно пробовать сколько угодно!</p><p class="tiny">При открытии выберите «Новая игра» для следующей группы или «Продолжить», чтобы вернуться к сохранённым ответам. Выполненное задание можно решить ещё раз. Звук включается отдельной кнопкой.</p><div class="action-row"><button class="secondary" id="resetBtn">Начать заново</button><button class="primary" id="closeHelp">Понятно</button></div></dialog><dialog id="resetDialog"><h2>Начать сначала?</h2><p>Собранные листочки и ответы будут очищены.</p><div class="action-row"><button class="secondary" id="cancelReset">Отмена</button><button class="primary" id="confirmReset">Начать</button></div></dialog>
 <script>
 (function(){
 
@@ -67,9 +167,9 @@ function harvest(){const w=WEIGHTS[weightIndex],d=data.done[weightIndex];return 
 function buttons(){const d=data.done[4],b=data.button;return '<section class="screen">'+renderTopBar('Лавка 2 · Митины пуговицы')+'<h2>Сколько пуговиц осталось?</h2><p class="button-story">Когда Митя уходил в школу, у него на рубашке было 7 пуговиц. В школе произошло много интересных событий, и 4 пуговицы потерялись. Сколько пуговиц у Мити на рубашке теперь?</p><div class="button-game"><div class="button-tray"><div class="shirt-buttons">'+Array.from({length:7},(_,i)=>'<button class="shirt-button '+(b.lost.includes(i)?'lost':'')+'" data-action="button-token" data-index="'+i+'" aria-label="Пуговица '+(i+1)+(b.lost.includes(i)?', потерялась':', на рубашке')+'"><i></i><i></i><i></i><i></i></button>').join('')+'</div><p style="margin:16px 0 0">Нажимайте на пуговицы, чтобы посчитать.</p></div><div class="answer-pane"><p class="support">Выберите действие и заполните окошки.</p><div class="equation"><span>7</span>'+['+','−'].map(op=>'<button class="op '+(b.op===op?'selected':'')+'" data-action="op" data-op="'+op+'" '+(d?'disabled':'')+' aria-label="'+(op==='+'?'Прибавить':'Вычесть')+'">'+op+'</button>').join('')+'<span>4 =</span>'+slot('result',b.result,d)+'</div><div class="answer-line">Ответ: '+slot('answer',b.answer,d)+' пуговицы.</div>'+(d?'':keypad())+message()+'<div class="action-row">'+(d?'<button class="primary" data-action="map">На ярмарку</button><button class="secondary" data-action="replay-buttons">Решить ещё раз</button>':'<button class="primary" data-action="check-buttons">Проверить</button><button class="secondary" data-action="hint">Подсказка</button>')+'</div></div></div></section>'}
 function dot(c){return '<span class="color-dot" style="background:'+COLORS[c]+'" aria-label="'+COLOR_NAMES[c]+'"></span>'}
 function beadTable(){let h='<table aria-label="Количество цепочек по цвету первой и второй бусины"><thead><tr><th style="font-size:13px">2-я бусина →<br>1-я бусина ↓</th>'+['r','y','g'].map(c=>'<th>'+dot(c)+'</th>').join('')+'<th>Всего</th></tr></thead><tbody>';for(let r=0;r<4;r++){h+='<tr><th>'+(r<3?dot(['r','y','g'][r]):'Всего')+'</th>';for(let c=0;c<4;c++){const key='table'+r+c;h+='<td><button class="table-slot '+(active===key?'selected ':'')+(data.done[5]?'valid ':'')+(tableErrors.includes(key)?'bad':'')+'" data-action="select" data-key="'+key+'" '+(data.done[5]?'disabled':'')+' aria-label="Строка '+(r<3?COLOR_NAMES[['r','y','g'][r]]:'всего')+', столбец '+(c<3?COLOR_NAMES[['r','y','g'][c]]:'всего')+'">'+(data.table[r][c]===null?'':data.table[r][c])+'</button></td>'}h+='</tr>'}return h+'</tbody></table>'}
-function beads(){const table=data.beadStep==='table',done=data.done[5];return '<section class="screen">'+renderTopBar('Лавка 3 · Бусы для ярмарки')+'<h2>'+(table?'Сколько получилось цепочек?':'Раскрасьте бусы для ярмарки')+'</h2><p class="beads-intro">Используя только красный, жёлтый и зелёный цвета, раскрасьте все бусины в цепочках так, чтобы были истинны утверждения:</p><div class="rules"><div class="rule">В каждой цепочке жёлтых бусин больше, чем зелёных.</div><div class="rule">Все цепочки разные.</div></div><div class="bead-layout"><div>'+(!table?'<div class="palette" aria-label="Краски">'+['r','y','g'].map(c=>'<button class="paint '+(paint===c?'selected':'')+'" data-action="paint" data-color="'+c+'"><i style="background:'+COLORS[c]+'"></i>'+{r:'Красный',y:'Жёлтый',g:'Зелёный'}[c]+'</button>').join('')+'<button class="paint '+(paint==='erase'?'selected':'')+'" data-action="paint" data-color="erase">Ластик</button></div>':'<p class="support">Считайте слева направо: первая бусина, вторая бусина.</p>')+'<div class="chains-scroll" tabindex="0" aria-label="Десять цепочек в три ряда: три, четыре, три"><div class="chain-grid">'+data.beads.map((a,i)=>'<div class="chain '+(beadErrors.includes(i)?'wrong':table?'pass':'')+'" aria-label="Цепочка '+(i+1)+'"><span class="chain-number">'+(i+1)+'</span>'+a.map((c,j)=>'<button class="bead" data-c="'+(c||'')+'" data-action="bead" data-row="'+i+'" data-col="'+j+'" '+(table?'disabled':'')+' aria-label="Цепочка '+(i+1)+', бусина '+(j+1)+': '+(c?COLOR_NAMES[c]:'не раскрашена')+'"></button>').join('')+'</div>').join('')+'</div></div>'+(table&&!done?'<button class="teacher-toggle" data-action="edit-beads">Изменить раскраску</button>':'')+'</div><div class="table-area">'+(table?'<h3>Заполните таблицу</h3><p class="table-hint">Впишите в ячейки количество цепочек.</p>'+beadTable()+(done?'':keypad()):'<h3>Секрет красивых бус</h3><p style="font-size:20px">Выберите краску. Нажимайте на бусины.</p><p style="font-size:20px">Порядок цветов важен: красная — жёлтая — жёлтая и жёлтая — красная — жёлтая — разные цепочки.</p><p class="support">Когда все десять цепочек будут готовы, откроется таблица.</p>')+message()+'<div class="action-row">'+(done?'<button class="primary" data-action="finish-beads">Готово!</button><button class="secondary" data-action="replay-beads">Собрать бусы заново</button>':'<button class="primary" data-action="'+(table?'check-table':'check-beads')+'">Проверить</button><button class="secondary" data-action="hint">Подсказка</button>')+'</div></div></div></section>'}
+function beads(){const table=data.beadStep==='table',done=data.done[5];return '<section class="screen">'+renderTopBar('Лавка 3 · Бусы для ярмарки')+'<h2>'+(table?'Сколько получилось цепочек?':'Раскрасьте бусы для ярмарки')+'</h2><p class="beads-intro">Используя только красный, жёлтый и зелёный цвета, раскрасьте все бусины в цепочках так, чтобы были истинны утверждения:</p><div class="rules"><div class="rule">В каждой цепочке жёлтых бусин больше, чем зелёных.</div><div class="rule">Все цепочки разные.</div></div><div class="bead-layout"><div>'+(!table?'<div class="palette" aria-label="Краски">'+['r','y','g'].map(c=>'<button class="paint '+(paint===c?'selected':'')+'" data-action="paint" data-color="'+c+'"><i style="background:'+COLORS[c]+'"></i>'+{r:'Красный',y:'Жёлтый',g:'Зелёный'}[c]+'</button>').join('')+'<button class="paint '+(paint==='erase'?'selected':'')+'" data-action="paint" data-color="erase">Ластик</button></div>':'<p class="support">Считайте слева направо: первая бусина, вторая бусина.</p>')+'<div class="chains-scroll" tabindex="0" aria-label="Десять цепочек в три ряда: три, четыре, три"><div class="chain-grid">'+data.beads.map((a,i)=>'<div class="chain '+(beadErrors.includes(i)?'wrong':table?'pass':'')+'" aria-label="Цепочка '+(i+1)+'"><span class="chain-number">'+(i+1)+'</span>'+a.map((c,j)=>'<button class="bead" data-c="'+(c||'')+'" data-action="bead" data-row="'+i+'" data-col="'+j+'" '+(table?'disabled':'')+' aria-label="Цепочка '+(i+1)+', бусина '+(j+1)+': '+(c?COLOR_NAMES[c]:'не раскрашена')+'"></button>').join('')+'</div>').join('')+'</div></div>'+(table&&!done?'<button class="teacher-toggle" data-action="edit-beads">Изменить раскраску</button>':'')+'</div><div class="table-area">'+(table?'<h3>Заполните таблицу</h3><p class="table-hint">Считайте цепочки по первым двум бусинам: первая — строка, вторая — столбец.</p>'+beadTable()+(done?'':keypad()):'<h3>Секрет красивых бус</h3><p style="font-size:20px">Выберите краску. Нажимайте на бусины.</p><p style="font-size:20px">Порядок цветов важен: красная — жёлтая — жёлтая и жёлтая — красная — жёлтая — разные цепочки.</p><p class="support">Когда все десять цепочек будут готовы, откроется таблица.</p>')+message()+'<div class="action-row">'+(done?'<button class="primary" data-action="finish-beads">Готово!</button><button class="secondary" data-action="replay-beads">Собрать бусы заново</button>':'<button class="primary" data-action="'+(table?'check-table':'check-beads')+'">Проверить</button><button class="secondary" data-action="hint">Подсказка</button>')+'</div></div></div></section>'}
 function victory(){return '<section class="screen">'+renderTopBar('Приключение пройдено')+'<div class="completion"><span class="big-leaf" aria-hidden="true"></span><p class="eyebrow">Ваша осенняя награда</p><h1>Ярмарка удалась!</h1><p>Урожай взвешен. Пуговицы посчитаны.<br>Яркие бусы готовы!</p><div class="reward">'+data.done.map(()=>'<span class="mini-leaf earned"></span>').join('')+'</div><p>Вы собрали все шесть золотых листочков!</p><div class="hero-actions" style="justify-content:center"><button class="primary" data-action="map">Вернуться на ярмарку</button><button class="secondary" data-action="restart">Сыграть ещё</button></div></div></section>'}
-function render(transition=false){const focused=!transition&&document.activeElement&&app.contains&&app.contains(document.activeElement)?document.activeElement:null;const focusKey=focused&&focused.dataset?JSON.stringify({...focused.dataset}):null;const oldImage=!transition&&app.querySelector?app.querySelector('.scale-frame img'):null;app.className=transition?'screen-transition':'';app.innerHTML=({title,map,harvest,buttons,beads,victory}[view])();if(oldImage){const newImage=app.querySelector('.scale-frame img');if(newImage&&newImage.getAttribute('src')===oldImage.getAttribute('src'))newImage.replaceWith(oldImage);}if(focusKey&&app.querySelectorAll){const target=[...app.querySelectorAll('button[data-action]')].find(b=>JSON.stringify({...b.dataset})===focusKey);if(target)target.focus({preventScroll:true});}document.getElementById('homeBtn').style.visibility=view==='title'?'hidden':'visible';}
+function render(transition=false){const focused=!transition&&document.activeElement&&app.contains&&app.contains(document.activeElement)?document.activeElement:null;const focusKey=focused&&focused.dataset?JSON.stringify({...focused.dataset}):null;const oldImage=!transition&&app.querySelector?app.querySelector('.scale-frame img'):null;app.className=transition?'screen-transition':'';app.setAttribute('data-view',view);app.setAttribute('data-bead-step',data.beadStep);app.innerHTML=({title,map,harvest,buttons,beads,victory}[view])();if(oldImage){const newImage=app.querySelector('.scale-frame img');if(newImage&&newImage.getAttribute('src')===oldImage.getAttribute('src'))newImage.replaceWith(oldImage);}if(focusKey&&app.querySelectorAll){const target=[...app.querySelectorAll('button[data-action]')].find(b=>JSON.stringify({...b.dataset})===focusKey);if(target)target.focus({preventScroll:true});}document.getElementById('homeBtn').style.visibility=view==='title'?'hidden':'visible';queueFit();}
 function navigate(v){view=v;feedback='';feedbackGood=false;beadErrors=[];tableErrors=[];if(v==='harvest')active=data.weights[weightIndex][0]===null?'weight0':'weight1';if(v==='buttons')active=data.button.result===null?'result':'answer';if(v==='beads')active='table00';render(true);window.scrollTo({top:0,behavior:'auto'});}
 function note(t,good=false){feedback=t;feedbackGood=good;render();if(!good)tone(false)}
 function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.remove('hidden');clearTimeout(toastTimer);toastTimer=setTimeout(()=>x.classList.add('hidden'),3500)}
@@ -91,8 +191,17 @@ document.getElementById('resetBtn').onclick=()=>{document.getElementById('help')
 let digitBuffer='',digitCell='',digitTime=0;
 app.addEventListener('pointerdown',()=>{digitBuffer='';digitCell='';});
 document.addEventListener('keydown',e=>{if(document.querySelector('dialog[open]'))return;if(/^\d$/.test(e.key)&&['harvest','buttons','beads'].includes(view)){e.preventDefault();let n=+e.key;if(view==='beads'&&data.beadStep==='table'){const cell=view+':'+active,now=Date.now();const joined=Number(digitBuffer+e.key);if(cell===digitCell&&now-digitTime<1200&&digitBuffer.length===1&&joined<=10){n=joined;digitBuffer='';}else digitBuffer=e.key;digitCell=cell;digitTime=now;}setNumber(n)}else if(e.key==='Backspace'||e.key==='Delete'){if(['harvest','buttons','beads'].includes(view)){e.preventDefault();setNumber(null)}}else if(e.key==='Enter'&&e.target===document.body){if(view==='harvest'&&!data.done[weightIndex])checkWeight();else if(view==='buttons'&&!data.done[4])checkButtons();else if(view==='beads'&&!data.done[5])data.beadStep==='paint'?checkBeads():checkTable()}});
+
+function stageFit(w,h){const scale=Math.min(Math.max(w,1)/1600,Math.max(h,1)/900);return {scale,width:1600*scale,height:900*scale};}
+function fitStage(){const stage=document.getElementById('game-stage');if(!stage||!stage.style.setProperty)return;const w=document.documentElement.clientWidth||window.innerWidth||1600,h=document.documentElement.clientHeight||window.innerHeight||900;stage.style.setProperty('--stage-scale',String(stageFit(w,h).scale));fitScreen();}
+function fitScreen(){if(!app.firstElementChild||!app.clientHeight)return;const screen=app.firstElementChild;screen.style.transform='none';const natural=screen.scrollHeight;const available=app.clientHeight;const ratio=natural>available?available/natural:1;if(ratio<1)screen.style.transform='scale('+ratio+')';}
+function queueFit(){if(window.requestAnimationFrame)window.requestAnimationFrame(fitScreen);}
+if(window.addEventListener){window.addEventListener('resize',fitStage);window.addEventListener('orientationchange',fitStage);if(window.visualViewport)window.visualViewport.addEventListener('resize',fitStage);}
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fitStage);
+
 window.AutumnRules=Rules;
 render();
+fitStage();
 
 })();
 </script></body></html>
